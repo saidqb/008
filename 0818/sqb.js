@@ -233,15 +233,18 @@ jQuery(document).ready(function($) {
 			},
 			success:function(response) {
 				// var ndata = JSON.parse(JSON.stringify(response));
-				$('#show_img_jenis_kendaraan').html('');
-				$('#show_img_jenis_kendaraan').html('<img style="max-width:100%" src="'+response.data.images+'"/>');
-            	// This outputs the result of the ajax request
-            	console.log(response);
-            },
-            error: function(errorThrown){
-            	console.log(errorThrown);
+				if(response.data !== 'undefined' && response.data !== ''){
+					$('#show_img_jenis_kendaraan').html('');
+					$('#show_img_jenis_kendaraan').html('<img style="max-width:100%" src="'+response.data.images+'"/>');
+	            	// This outputs the result of the ajax request
+	            	// console.log(response);
             }
-        });  
+
+        },
+        error: function(errorThrown){
+        	console.log(errorThrown);
+        }
+    });  
 
 	}).change();
 });
