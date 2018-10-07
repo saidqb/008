@@ -109,6 +109,7 @@ jQuery(document).ready(function($) {
 		tujuan = $form.find( '#tujuan' ).val(),
 		name = $form.find( '#name' ).val(),
 		tgl_pemakaian = $form.find( '#tgl_pemakaian' ).val(),
+		email = $form.find( '#email' ).val(),
 		no_hp = $form.find( '#no_hp' ).val(),
 		jam_penjemputan = $form.find( '#jam_penjemputan' ).val(),
 		judul = $form.find( '#judul' ).val(),
@@ -150,6 +151,7 @@ jQuery(document).ready(function($) {
 				'tujuan' : tujuan,
 				'name' : name,	
 				'tgl_pemakaian' : tgl_pemakaian,
+				'email' : email,
 				'no_hp' : no_hp,
 				'jam_penjemputan' : jam_penjemputan,
 				'judul' : judul,
@@ -188,6 +190,7 @@ jQuery(document).ready(function($) {
 				$form.find( 'tujuan' ).val('');
 				$form.find( 'name' ).val('');
 				$form.find( 'tgl_pemakaian' ).val('');
+				$form.find( 'email' ).val('');
 				$form.find( 'no_hp' ).val('');
 				$form.find( 'jam_penjemputan' ).val('');
 				$form.find( 'judul' ).val('');
